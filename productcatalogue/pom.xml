@@ -6,7 +6,7 @@
 
     <groupId>uk.co.danielbryant.djshopping</groupId>
     <artifactId>productcatalogue</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>SNAPSHOT-1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
