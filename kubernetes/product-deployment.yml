@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productcatalogue
+  namespace: shopping
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: productcatalogue
+  template:
+    metadata:
+      labels:
+        app: productcatalogue
+    spec:
+      containers:
+      - name: productcatalogue
+        image: monikachaudhary8/productcatalogue:v1
+        ports:
+        - containerPort: 8020
+        livenessProbe:
+          httpGet:
+            path: /healthcheck
+            port: 8025
+          timeoutSeconds: 1
+          initialDelaySeconds: 30
