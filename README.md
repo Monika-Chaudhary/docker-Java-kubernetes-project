@@ -10,4 +10,5 @@ Steps
 4. Open 8080 port on SG of EC2 Instance and access jenkins using http://publicIpOfInstance:8080/
 5. Install plugins and configure tools(git, java, maven) on Jenkins
 6. Install kubectl on ec2 instance
-7. 
+7. Install docker
+8. 
